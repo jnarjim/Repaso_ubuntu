@@ -16,7 +16,7 @@ def get_db():
     finally:
         db.close()
 
-# cambio para action 2
+# cambio para action 1
 
 @app.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
